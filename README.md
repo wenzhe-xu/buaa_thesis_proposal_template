@@ -1,0 +1,2 @@
+# buaa_thesis_proposal_template
+BUAA硕士开题报告Latex模版
