@@ -1,0 +1,233 @@
+%!TEX program = xelatex
+\documentclass[11pt, a4paper]{article}
+\usepackage{cite}
+\usepackage{ctex}
+\usepackage{natbib}
+\setcitestyle{authoryear, open={(}, close = {)}}
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{enumerate}
+\usepackage{bm}
+\usepackage{color}
+\usepackage{pifont}
+\usepackage[final]{pdfpages}
+
+\usepackage{geometry}
+\geometry{left = 2cm, right = 2.4cm, top = 2.4cm, bottom = 3cm}
+\renewcommand{\baselinestretch}{1.5}
+\usepackage{fancyhdr, fancybox}
+\usepackage{lastpage}
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\rhead{}
+\cfoot{}
+\rfoot{}
+\lfoot{}
+\cfoot{\fontsize{10.5pt}{\baselineskip}\selectfont 第\ \thepage\ 页 \quad 共\ \pageref{LastPage}\ 页}
+\renewcommand{\headrulewidth}{0cm}
+\renewcommand{\footrulewidth}{0cm}
+
+\begin{document}
+
+\thispagestyle{empty}
+\newgeometry{left = 1cm, right = 1cm, top = 3cm, bottom = 3cm}
+\begin{center}
+  \includegraphics[width=0.6\textwidth]{badge.png}
+\end{center}
+
+\vskip 0.5cm
+\begin{table}[!h]
+  \setlength\tabcolsep{0cm}
+  \renewcommand{\arraystretch}{1}
+  \renewcommand{\CJKglue}{\hskip 6pt plus 0.08\baselineskip}
+  \begin{center}
+    \fontsize{36pt}{\baselineskip}\selectfont
+    \begin{tabular}{p{18cm}<{\centering}}
+    硕士学位论文开题报告 \\
+    \midrule
+    \bottomrule[3pt]
+    \end{tabular}
+  \end{center}
+\end{table}
+
+\vskip 2cm
+\begin{center}
+  \fontsize{22pt}{\baselineskip}\selectfont
+  建议用xelatex编译
+\end{center}
+
+\vskip 3cm
+\begin{table}[!h]
+  \setlength\tabcolsep{4pt}
+  \renewcommand{\arraystretch}{0.5}
+  \begin{center}
+    \fontsize{18pt}{\baselineskip}\selectfont
+    \begin{tabular}{p{3.2cm} p{4.8cm}<{\centering}}
+      \textbf{学生姓名：} & \textbf{姓名} \\
+      \cline{2-2}
+      \vskip 0.1cm \textbf{学号：} & \vskip 0.2cm \textbf{学号} \\
+      \cline{2-2}
+      \vskip 0.1cm \textbf{指导教师：} & \vskip 0.1cm \textbf{姓名} \\
+      \cline{2-2}
+      \vskip 0.1cm \textbf{专业：} & \vskip 0.1cm \textbf{专业} \\
+      \cline{2-2}
+      \vskip 0.1cm \textbf{院系：} & \vskip 0.1cm \textbf{学院} \\
+      \cline{2-2}
+    \end{tabular}
+  \end{center}
+\end{table}
+
+\vskip 2cm
+\begin{center}
+  \fontsize{18pt}{\baselineskip}\selectfont
+  \renewcommand{\CJKglue}{\hskip 6pt plus 0.08\baselineskip}
+  \textbf{
+    北京航空航天大学XX学院 \\
+    \today
+  }
+\end{center}
+
+\restoregeometry
+\newpage
+\setcounter{page}{1}
+
+\fancypage{%
+  \setlength{\fboxsep}{0.2cm}%
+  \setlength{\fboxrule}{0.8pt}%
+  \setlength{\shadowsize}{0cm}%
+  \shadowbox}
+{}
+
+\vspace*{-0.6cm}
+\noindent
+{\fontsize{12pt}{\baselineskip}\selectfont \bfseries
+  %一、论文选题依据（包括论文选题的意义、国内外研究现状分析等）
+  一、论文选题的背景意义和根据 
+}
+\newline
+（对基础研究，着重结合国际科学发展趋势，论述课题的科学意义；对应用基础或应用研究，着重结合学科前沿、围绕国民经济、社会发展和管理实践的重要问题，论述其应用前景）
+
+\vskip 0.2cm
+
+这个模板只是一个参考，能不能使用大家还是要看自己学院教务的要求（如果需要提交word版本的话，那还是别用 \LaTeX ），当然大家可以在这个上面进行修改。
+
+前人栽树后人乘凉，感谢创作这个模板的前辈，我替换了一个校徽校名的图片，原来的实在是太糊了，还有白色阴影，估计是从别的地方扣下来的，我更换了一个AI导出的版本，当然这个校徽加校名的图片尺寸也咩有很大，但已经够用了，另外附上一个更清楚的(big\_badge.png)。
+
+文献综述的话，大家可以自行用这个模板改。
+
+\newpage
+
+\noindent
+{\fontsize{12pt}{\baselineskip}\selectfont \bfseries
+	二、国内外研究现状及发展动态分析 
+}
+\newline
+（包括国内外研究现状和实践发展状况分析）
+
+\noindent
+{\bfseries
+（一） XXX的相关研究
+}
+
+小标题是我随便编的，不是模版上带的，下一个章节同理。
+
+\vskip 0.1cm
+\noindent
+{\bfseries
+（二） XXX的相关概述
+}
+
+\vskip 0.1cm
+\noindent
+{\bfseries
+（三） XXX的估计方法
+}
+
+\vskip 0.1cm
+\noindent
+{\bfseries
+（四） XXX的相关研究
+}
+
+\vskip 0.1cm
+\noindent
+{\bfseries
+（五） 结论
+}
+
+
+\newpage
+\noindent
+{\fontsize{12pt}{\baselineskip}\selectfont \bfseries
+  三、课题的研究内容及拟采用的研究方法、技术路线及研究难点，预期达到的目标
+}
+\newline
+（1. 课题的研究内容；2. 拟采用的研究方法、技术路线及研究难点；3. 预期达到的目标。）
+
+\vskip 0.2cm
+
+\vskip 0.1cm
+\noindent
+{\bfseries
+  1.课题的研究内容
+}
+
+\vskip 0.1cm
+\noindent
+{\bfseries
+  2.技术路线
+}
+
+\vskip 0.1cm
+\noindent
+{\bfseries
+  3.创新点
+}
+
+\vskip 0.1cm
+\noindent
+{\bfseries
+  4.研究难点
+}
+
+\vskip 0.1cm
+\noindent
+{\bfseries
+  5.预期达到的目标
+}
+
+
+\newpage
+
+\noindent
+{\fontsize{12pt}{\baselineskip}\selectfont \bfseries
+  四、论文详细工作进度安排
+}
+\newline
+
+
+\begin{table}[!h]
+  \setlength\tabcolsep{5pt}
+  \begin{center}
+    \begin{tabular}{p{5.5cm} p{9.5cm}}
+    2022 年\ 9 月\ -- 2022 年\ 10 月\ & 撰写开题报告和文献综述，完成开题\\
+    2022 年\ 11 月\ & 研究XXX的构建理论方法 \\
+    2022 年\ 12 月\ -- 2023 年\ 1月\ & 构建XXX模型 \\
+    2023 年\ 2 月\ & 算法设计及有效性证明 \\
+    2023 年\ 3 月\ & 算法编程实现 \\
+    2023 年\ 4 月\ -- 2023 年\ 5 月\ & 研究XXX的XXX \\
+    2023 年\ 6 月\ -- 2021 年\ 8 月\ & 实例应用及模型解释，撰写论文 \\
+    2023 年\ 9 月\ & 完成中期检查，完成论文初稿\\
+    2023 年\ 10 月\ -- 2023 年\ 11 月\ & 完成论文，准备答辩 \\
+    \end{tabular}
+  \end{center}
+\end{table}
+\vspace*{-0.6cm}
+
+\newpage
+\bibliographystyle{plainnat}
+\bibliography{bibs}
+\end{document}
